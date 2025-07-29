@@ -1,5 +1,5 @@
 import Badge from "@/components/ui/Badge";
-import posts from "@/data/posts.json";
+import posts from "@/data/posts";
 
 type PageProps = {
   params: Promise<{ slug: string }>;

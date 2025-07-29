@@ -1,5 +1,5 @@
 import PostPreview from "@/components/ui/PostPreview";
-import posts from "@/data/posts.json";
+import posts from "@/data/posts";
 
 export default function Blog() {
   return (
