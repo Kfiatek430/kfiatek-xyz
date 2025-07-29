@@ -25,12 +25,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pl" suppressHydrationWarning>
+    <html lang="pl">
       <body
         className={`${geistSans.variable} ${geistMono.variable} bg-background text-foreground antialiased min-h-screen max-w-screen`}
       >
         <Navbar />
-        <ThemeProvider attribute="class">{children}</ThemeProvider>
+        {children}
       </body>
     </html>
   );
