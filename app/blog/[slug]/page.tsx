@@ -1,5 +1,6 @@
 import Badge from "@/components/ui/Badge";
 import posts from "@/data/posts";
+import Link from "next/link";
 
 type PageProps = {
   params: Promise<{ slug: string }>;
@@ -18,8 +19,13 @@ export default async function BlogPost({ params }: PageProps) {
   return (
     <section className="flex min-h-screen justify-center bg-background py-30 px-10">
       <div className="flex flex-col gap-5 items-center w-full md:w-4/5">
-        <h2 className="text-4xl font-bold">{post.title}</h2>
-        <div className="flex flex-col md:flex-row gap-2 justify-around w-full">
+        <div className="flex flex-col w-full gap-2">
+          <Link href="/blog" className="w-full text-primary">
+            Powrót do listy postów
+          </Link>
+          <h2 className="text-4xl font-bold w-full">{post.title}</h2>
+        </div>
+        <div className="flex flex-col md:flex-row gap-2 justify-between w-full">
           <p className="opacity-80">{post.date}</p>
           <div className="flex gap-2">
             {post.categories.map((category, idx) => (
