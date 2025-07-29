@@ -15,10 +15,10 @@ export default function Home() {
               Jestem uczniem Technikum Łączności na kierunku technik
               programista.
             </p>
-            <p>Interesuję się tworzeniem solidnych rozwiązań backendowych.</p>
             <p>
-              Obecnie pracuję na stanowisku Full-stack Web Developer w Descope.
+              Interesuję się tworzeniem kompleksowych rozwiązań backendowych.
             </p>
+            <p>Obecnie pracuję na stanowisku Software Developer w Descope.</p>
           </div>
         </div>
       </section>

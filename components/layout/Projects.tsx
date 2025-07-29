@@ -20,21 +20,21 @@ const Projects = () => {
     {
       title: "Lights",
       description:
-        "Nowoczesna aplikacja internetowa do sterowania inteligentnym systemem oświetlenia domu zbudowana przy użyciu Next.js, TypeScript i komunikacji WebSocket w czasie rzeczywistym.",
+        "Nowoczesna aplikacja internetowa służąca do sterowania inteligentnym systemem oświetlenia domu zbudowana przy użyciu Next.js, TypeScript i komunikacji WebSocket w czasie rzeczywistym.",
       technologies: ["Next.js", "Typescript"],
       github: "https://github.com/Kfiatek430/Lights",
     },
     {
       title: "Algorithms",
       description:
-        "Repozytorium zawierające kolekcję różnych algorytmów zaimplementowanych w C++. Obejmuje ono szereg podstawowych algorytmów sortowania, wyszukiwania, teorii liczb, kryptografii, metod numerycznych i przetwarzania tekstu. ",
+        "Repozytorium zawierające kolekcję różnych algorytmów zaimplementowanych w C++. Obejmuje ono szereg algorytmów sortowania, wyszukiwania, teorii liczb, kryptografii, metod numerycznych i przetwarzania tekstu. ",
       technologies: ["C++"],
       github: "https://github.com/Kfiatek430/Algorithms",
     },
     {
       title: "RedNoticeDashboard",
       description:
-        "Aplikacja internetowa, która umożliwia użytkownikom wyszukiwanie i przeglądanie informacji o osobach poszukiwanych przez Interpol. Aplikacja pobiera dane z interfejsu API Interpolu i prezentuje je w przyjaznym dla użytkownika interfejsie.",
+        "Aplikacja internetowa, która umożliwia użytkownikom wyszukiwanie, przeglądanie oraz filtrowanie informacji o osobach poszukiwanych przez Interpol.",
       technologies: ["Svelte", "Typescript"],
       github: "https://github.com/Kfiatek430/RedNoticeDashboard",
     },
@@ -51,14 +51,14 @@ const Projects = () => {
     {
       title: "SudokuAPI",
       description:
-        "SudokuAPI to proste API RESTful do generowania, rozwiązywania i sprawdzania poprawności łamigłówek Sudoku. Zapewnia endpointy do tworzenia nowych plansz Sudoku, rozwiązywania danych łamigłówek i sprawdzania poprawności planszy.",
+        "SudokuAPI to proste RESTful API do generowania, rozwiązywania i sprawdzania poprawności łamigłówek Sudoku. Zapewnia endpointy do tworzenia nowych plansz Sudoku, rozwiązywania danych łamigłówek i sprawdzania poprawności planszy.",
       technologies: ["Java", "Spring Boot"],
       github: "https://github.com/Kfiatek430/SudokuAPI",
     },
     {
       title: "Coinfy",
       description:
-        "Nowoczesne narzędzie służące do konwersji walut i analiz finansowych zbudowane przy użyciu Svelte. Zapewnia codzienne kursy wymiany, wizualizację danych historycznych i analizy finansowe, aby pomóc użytkownikom być na bieżąco z globalnymi trendami walutowymi.",
+        "Nowoczesne narzędzie służące do konwersji walut zbudowane przy użyciu Svelte. Zapewnia codzienne kursy wymiany i wizualizację danych historycznych, aby pomóc użytkownikom być na bieżąco z globalnymi trendami walutowymi.",
       technologies: ["Svelte", "Typescript"],
       github: "https://github.com/Kfiatek430/Coinfy",
     },

@@ -6,6 +6,10 @@
   --color-background: #0a1929;
 }
 
+body {
+  scrollbar-gutter: stable;
+}
+
 ul li::before {
   position: absolute;
   left: 0;

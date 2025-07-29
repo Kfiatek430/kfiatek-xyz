@@ -2,11 +2,12 @@
 
 import React, { useState } from "react";
 import WorkExperienceButton from "../ui/WorkExperienceButton";
-import TechnologyBadge from "../ui/TechnologyBadge";
+import Badge from "../ui/Badge";
 
 type WorkExperience = {
   position: string;
   company: string;
+  linkedin: string;
   time: string;
   description: string[];
   technologies: string[];
@@ -17,6 +18,7 @@ const WorkExperience = () => {
     {
       position: "Software Developer",
       company: "Descope",
+      linkedin: "https://www.linkedin.com/company/descope-engineering/",
       time: "Czerwiec 2025 - obecnie",
       description: [
         "Dostosowanie API do nowego flow zaprojektowanego zgodnie z wymaganiami biznesowymi",
@@ -27,6 +29,7 @@ const WorkExperience = () => {
     {
       position: "Full-stack Web Developer",
       company: "RBC Bearings",
+      linkedin: "https://www.linkedin.com/company/rbc-bearings/",
       time: "Maj 2025",
       description: [
         "Implementacja sklepu internetowego z systemem uwierzytelniania",
@@ -46,6 +49,7 @@ const WorkExperience = () => {
     {
       position: "R&D Intern",
       company: "Polcom",
+      linkedin: "https://www.linkedin.com/company/polcom/",
       time: "Sierpień 2024",
       description: [
         "Implementacja systemu zarządzania flotą samochodową firmy",
@@ -77,17 +81,27 @@ const WorkExperience = () => {
       <div className="flex flex-col gap-5 w-full md:w-2/3 min-h-[330px]">
         <h3 className="text-lg">
           {data[currentIdx].position}
-          <span className="text-primary"> @{data[currentIdx].company}</span>
+          <a
+            href={data[currentIdx].linkedin}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-primary"
+          >
+            {" "}
+            @{data[currentIdx].company}
+          </a>
         </h3>
         <p className="font-mono">{data[currentIdx].time}</p>
         <ul className="opacity-80 flex flex-col gap-1">
-          {data[currentIdx].description.map((description) => (
-            <li className="relative pl-5">{description}</li>
+          {data[currentIdx].description.map((description, idx) => (
+            <li key={idx} className="relative pl-5">
+              {description}
+            </li>
           ))}
         </ul>
         <div className="flex flex-wrap gap-1">
           {data[currentIdx].technologies.map((item, idx) => (
-            <TechnologyBadge key={idx} text={item} />
+            <Badge key={idx} text={item} />
           ))}
         </div>
       </div>

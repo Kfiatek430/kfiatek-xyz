@@ -7,7 +7,7 @@ interface NavbarItemProps {
 }
 
 const NavbarItem = ({ text, href, isActive }: NavbarItemProps) => {
-  const baseClasses = "p-2 text-lg text-foreground transition-colors";
+  const baseClasses = "px-2 py-1 text-lg text-foreground transition-colors";
   const activeClasses = "link text-primary border-b-2";
   const inactiveClasses = "hover:link hover:text-primary";
 
