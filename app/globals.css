@@ -10,6 +10,10 @@ body {
   scrollbar-gutter: stable;
 }
 
+html {
+  scroll-padding-top: 7.5rem;
+}
+
 ul li::before {
   position: absolute;
   left: 0;

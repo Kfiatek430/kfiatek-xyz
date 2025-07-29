@@ -3,6 +3,7 @@
 import React from "react";
 import { usePathname } from "next/navigation";
 import NavbarItem from "../ui/NavbarItem";
+import Link from "next/link";
 
 const Navbar = () => {
   const pathname = usePathname();
@@ -20,7 +21,9 @@ const Navbar = () => {
 
   return (
     <div className="flex flex-col fixed top-0 left-0 z-50 justify-center items-center md:flex-row md:justify-around w-full px-5 py-2 bg-background">
-      <div className="text-2xl md:text-lg font-bold p-2">Kfiatek</div>
+      <Link href="/" className="text-2xl md:text-lg font-bold p-2">
+        Kfiatek
+      </Link>
       <div className="flex gap-10">
         {items.map((item, idx) => {
           let isActive = false;
