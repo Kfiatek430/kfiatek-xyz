@@ -1,4 +1,4 @@
-import TechnologyBadge from "./TechnologyBadge";
+import Badge from "./Badge";
 
 interface ProjectTileProps {
   title: string;
@@ -28,8 +28,8 @@ const ProjectCard = ({
 
       <div className="flex flex-col gap-5">
         <div className="flex flex-row gap-1.5 flex-wrap">
-          {technologies.map((tech) => (
-            <TechnologyBadge key={tech} text={tech} />
+          {technologies.map((tech, idx) => (
+            <Badge key={idx} text={tech} />
           ))}
         </div>
 
@@ -38,9 +38,8 @@ const ProjectCard = ({
           href={github}
           target="_blank"
           rel="noopener noreferrer"
-          aria-label={`View ${title} project on GitHub`}
         >
-          View on GitHub
+          Wyświetl na GitHubie
         </a>
       </div>
     </div>

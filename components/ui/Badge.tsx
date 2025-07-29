@@ -1,8 +1,8 @@
-interface TechnologyBadgeProps {
+interface BadgeProps {
   text: string;
 }
 
-const TechnologyBadge = ({ text }: TechnologyBadgeProps) => {
+const Badge = ({ text }: BadgeProps) => {
   return (
     <div className="w-fit p-1 px-1.5 rounded text-primary bg-primary/20">
       {text}
@@ -10,4 +10,4 @@ const TechnologyBadge = ({ text }: TechnologyBadgeProps) => {
   );
 };
 
-export default TechnologyBadge;
+export default Badge;
