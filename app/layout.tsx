@@ -18,6 +18,9 @@ export const metadata: Metadata = {
   title: "Kfiatek",
   description:
     "Portfolio i blog programisty z projektami, doświadczeniem zawodowym oraz artykułami nma tematach społeczno-filozoficznych.",
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({
