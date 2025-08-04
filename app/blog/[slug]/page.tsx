@@ -24,7 +24,7 @@ export default async function BlogPost({ params }: PageProps) {
             Powrót do listy postów
           </Link>
           <h2 className="text-4xl font-bold w-full">{post.title}</h2>
-          <div className="flex flex-col md:flex-row gap-2 justify-between items-center w-full">
+          <div className="flex flex-col md:flex-row gap-2 justify-between md:items-center w-full">
             <p className="opacity-80">{post.date}</p>
             <div className="flex gap-2">
               {post.categories.map((category, idx) => (
