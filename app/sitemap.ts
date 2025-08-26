@@ -1,18 +1,18 @@
-import { NextRequest } from "next/server";
+import type { MetadataRoute } from "next";
 
-export function GET(_: NextRequest) {
-  return new Response(
-    `<?xml version="1.0" encoding="UTF-8"?>
-    <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-      <url>
-        <loc>https://kfiatek.vercel.app/</loc>
-        <priority>1.0</priority>
-      </url>
-      <url>
-        <loc>https://kfiatek.vercel.app/blog</loc>
-        <priority>0.8</priority>
-      </url>
-    </urlset>`,
-    { headers: { "Content-Type": "application/xml" } }
-  );
+export default function sitemap(): MetadataRoute.Sitemap {
+  return [
+    {
+      url: "https://kfiatek.vercel.app",
+      lastModified: new Date(),
+      changeFrequency: "yearly",
+      priority: 1,
+    },
+    {
+      url: "https://kfiatek.vercel.app/blog",
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+  ];
 }
