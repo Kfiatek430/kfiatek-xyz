@@ -17,9 +17,18 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Kfiatek",
   description:
-    "Portfolio i blog programisty z projektami, doświadczeniem zawodowym oraz artykułami nma tematach społeczno-filozoficznych.",
+    "Portfolio i blog programisty z projektami, doświadczeniem zawodowym oraz artykułami o tematach społeczno-filozoficznych.",
   icons: {
     icon: "/favicon.ico",
+  },
+  openGraph: {
+    title: "Kfiatek",
+    description:
+      "Portfolio i blog programisty z projektami, doświadczeniem zawodowym oraz artykułami o tematach społeczno-filozoficznych.",
+    url: "https://kfiatek.vercel.app",
+    siteName: "Kfiatek",
+    locale: "pl_PL",
+    type: "website",
   },
 };
 
