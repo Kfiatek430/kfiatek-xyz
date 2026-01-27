@@ -20,7 +20,7 @@ export default async function BlogPost({ params }: PageProps) {
     <section className="flex min-h-screen justify-center bg-background py-30 px-10">
       <div className="flex flex-col gap-5 items-center w-full md:w-4/5">
         <div className="flex flex-col w-full gap-2">
-          <Link href="/blog" className="w-full text-primary">
+          <Link href="/" className="w-full text-primary">
             Powrót do listy postów
           </Link>
           <h2 className="text-4xl font-bold w-full">{post.title}</h2>
