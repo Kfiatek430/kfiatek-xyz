@@ -35,10 +35,16 @@ export default async function BlogPost({ params }: PageProps) {
         </div>
         <div className="flex flex-col gap-3 text-lg">
           {paragraphs.map((paragraph, idx) => {
-            const firstLetterClass =
-              idx === 0
-                ? "first-letter:text-5xl first-letter:font-bold first-letter:float-left first-letter:text-primary first-letter:mr-2"
-                : "";
+            let firstLetterClass = "";
+            if (idx === 0) {
+              const words = paragraph.split(" ");
+              const marginClass =
+                words.length > 1 && words[0].length === 1
+                  ? "first-letter:mr-2.5"
+                  : "first-letter:mr-2";
+              firstLetterClass = `first-letter:text-5xl first-letter:font-bold first-letter:float-left first-letter:text-primary ${marginClass}`;
+            }
+
             return (
               <p key={idx} className={firstLetterClass + ` text-justify`}>
                 {paragraph}
