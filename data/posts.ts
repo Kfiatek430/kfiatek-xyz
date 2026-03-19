@@ -8,8 +8,8 @@ type Post = {
 
 const posts: Post[] = [
   {
-    slug: "a-candle-loses-nothing-in-lighting-another-candle",
-    title: "A candle loses nothing in lightning another candle",
+    slug: "a-candle-loses-nothing-by-lighting-another-candle",
+    title: "A candle loses nothing by lighting another candle",
     categories: ["refleksja egzystencjalna", "relacje międzyludzkie"],
     date: "19 marca 2026",
     content:
