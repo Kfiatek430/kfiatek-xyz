@@ -8,6 +8,14 @@ type Post = {
 
 const posts: Post[] = [
   {
+    slug: "szklane-domy",
+    title: "Szklane domy",
+    categories: ["refleksja egzystencjalna", "relacje międzyludzkie"],
+    date: "30 marca 2026",
+    content:
+      "Każdy człowiek ma naturalną potrzebę odnalezienia i zbudowania własnego domu. Nie chodzi mi tu jednak o fizyczne miejsce, w którym żyjemy, a raczej o niematerialny stan, w którym czujemy się bezpieczni. Stan, który pozwala nam odetchnąć od trudów codziennego życia, zresetować się i naładować baterie. Miejsce, do którego możemy wracać zarówno w najlepszych, jak i w najtrudniejszych momentach naszego życia. Przestrzeń, która chroni nas, gdy jej potrzebujemy.\nCzęść osób traktuje jako taki dom bliską ich sercu aktywność, której wykonywanie sprawia im szczególną radość i pozwala im odpocząć. Może być to chociażby muzyka, sport czy inne, mniej lub bardziej typowe hobby. Jednak najwięcej osób decyduje się uczynić swoim domem drugą osobę. Znajdują w niej swoje oparcie, ucieczkę, a przede wszystkim siłę w ciężkich chwilach. Ten stan powinien być naturalnie odwzajemniony - my także powinniśmy stanowić podporę dla drugiej osoby. Nie zawsze oczywiście tak jest. Dlatego też należy przestrzegać się przed zbyt wczesnym budowaniem swojego życia na kimś innym. To moment, do którego każda relacja powinna dojrzewać i który powinna budować w odpowiednim tempie, w miarę jej rozwoju.\nSkąd więc tytuł Szklane Domy? Bo mityczne szklane domy Seweryna Baryki nie byłyby tak trwałe, jak próbował je przedstawiać. Szkło jest materiałem kruchym i podatnym na zniszczenia. A każdy dom - nieważne, jak kolorowy, funkcjonalny, piękny czy nawet upragniony - bez podparcia i bez odpowiednich fundamentów nie przetrwa pierwszej lepszej burzy.",
+  },
+  {
     slug: "a-candle-loses-nothing-by-lighting-another-candle",
     title: "A candle loses nothing by lighting another candle",
     categories: ["refleksja egzystencjalna", "relacje międzyludzkie"],
