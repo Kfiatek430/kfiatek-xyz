@@ -7,12 +7,12 @@ export default function Home() {
       <div className="flex-1 h-full p-2 flex flex-col gap-2">
         <h2 className="text-4xl text-primary font-bold">O mnie</h2>
         <p className="text-lg text-justify">
-          Uczeń czwartej klasy technikum, z pasji i zawodu programista. Po
+          Uczeń piątej klasy technikum, z pasji i zawodu programista. Po
           godzinach biegam z rakietą po korcie - najczęściej badmintonową,
           chociaż ostatnimi czasy też z tenisową. Piszę o tematach
           społeczno-filozoficznych, a także redaguję polskojęzyczną Wikipedię.
           Czasami uchwycę jakiś ładny kadr moim wysłużonym Nikonem. Jestem
-          katolikiem oraz członkiem LSO.
+          katolikiem oraz członkiem Grup Apostolskich.
         </p>
       </div>
       <div className="flex-2 h-full flex flex-col gap-10">
